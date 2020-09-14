@@ -19,7 +19,8 @@ def convertFromNumber (n):
 
 
 # Import the dataset
-dataset = np.genfromtxt('output-file.txt', delimiter=', ', converters={0: convertToNumber, 2: convertToNumber, 4: convertToNumber})
+dataset_file_location = '/Users/brenodcruz/eclipse-workspace/cool.parser/python_script/output-file.txt'
+dataset = np.genfromtxt(dataset_file_location, delimiter=', ', converters={0: convertToNumber, 2: convertToNumber, 4: convertToNumber})
 
 # (0) string    (1) entropy (2) heuristics (3) heuristic weight (4) regex patterns (5) regex weights
 # (6) label 		
